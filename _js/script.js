@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', checkScroll);
     checkScroll(); // Comprobar al cargar la página
 
-    // 3. Sistema de citas aleatorias
+    // Sistema de citas aleatorias
     const quotes = [
         {
             text: "Dios ha muerto. Dios sigue muerto. Y nosotros lo hemos matado.",
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
         quotesContainer.insertBefore(newQuoteCard, firstQuote);
         firstQuote.remove();
         
-        // Forzar el reflow para activar la transición
+        // Forzar el reflow para activar transición
         void newQuoteCard.offsetWidth;
         
         newQuoteCard.style.opacity = '1';
